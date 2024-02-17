@@ -8,8 +8,36 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body class="container mx-auto max-w-screen-lg">
+    <header class="">
+        <!-- navbar -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <a class="btn btn-ghost text-xl">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn raleway font-semibold">Bus <img src="./images/bus-icon.png" alt=""></a>
+            </div>
+        </div>
+        <!-- banner -->
+        <div style="background-image: url('images/banner.png');" class="bg-no-repeat bg-center min-h-screen flex items-center justify-center text-center">
+            <div class="space-y-5">
+                <h1 style="font-size: 64px;" class="text-white">End-to-End Travel With <br> <span class="text-lime-500">P Paribahan</span></h1>
+                <p class="w-2/3 mx-auto text-gray-100">After texting, you will receive a message back with the next 4 buses to arrive at your stop along with their estimated arrival times.</p>
+                <button class="btn btn-success bg-lime-500 hover:bg-slate-950 hover:text-white border-none"><a href="">Buy Tickets</a></button>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
     <script src="main.js"></script>
 </body>
 </html>
