@@ -25,3 +25,11 @@ html{
 .bgd{
     background-color: rgb(128, 175, 128);
 }
+
+.hide{
+    display: none;
+}
+
+.visible{
+    display: block;
+}

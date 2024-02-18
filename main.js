@@ -31,6 +31,16 @@ btns.forEach((btn)=>{
     })
 })
 
-function myF(){
-    
+function myFu(){
+    const h=document.getElementById('hide');
+    const v=document.getElementById('visible');
+    h.classList.add('hidden');
+    v.classList.remove('hidden');
+}
+
+function myFunc(){
+    const h=document.getElementById('hide');
+    const v=document.getElementById('visible');
+    h.classList.remove('hidden');
+    v.classList.add('hidden');
 }
