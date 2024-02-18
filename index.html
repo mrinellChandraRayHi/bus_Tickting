@@ -33,14 +33,14 @@
             <div class="space-y-5">
                 <h1 style="font-size: 64px;" class="text-white">End-to-End Travel With <br> <span class="text-lime-500">P Paribahan</span></h1>
                 <p class="w-2/3 mx-auto text-gray-100">After texting, you will receive a message back with the next 4 buses to arrive at your stop along with their estimated arrival times.</p>
-                <button class="btn btn-success bg-lime-500 hover:bg-slate-950 hover:text-white border-none"><a href="">Buy Tickets</a></button>
+                <button class="btn btn-success bg-lime-500 hover:bg-slate-950 hover:text-white border-none"><a href="#paribahan">Buy Tickets</a></button>
             </div>
         </div>
     </header>
     <main>
         <!-- offers -->
         <section class="">
-            <h1 class="text-center">Best offers for you</h1>
+            <h1 class="text-center text-2xl font-bold mb-10">Best offers for you</h1>
             <!-- cardOne -->
             <div class="flex gap-5">
                 <div class="card card-side bg-base-100 shadow-xl bg-yellow-600 flex-1">
@@ -70,10 +70,10 @@
             </div>
         </section>
         <!-- paribahan -->
-        <section>
-            <div>
-                <h1>P.H Paribahan</h1>
-                <p>Please note: This service is only available for the Victoria Regional Transit System at this time.</p>
+        <section id="paribahan" class="space-y-10 mt-10">
+            <div class="text-center">
+                <h1 class="font-bold text-2xl">P.H Paribahan</h1>
+                <p class="w-[500px] mx-auto text-sm">Please note: This service is only available for the Victoria Regional Transit System at this time.</p>
             </div>
             <!-- ticket -->
             <div class="bg-red-400 flex justify-between">
@@ -126,12 +126,12 @@
             </div>
         </section>
         <!-- select Set -->
-        <section>
-            <div>
+        <section class="mt-20">
+            <div class="flex justify-between gap-20">
                 <!-- left -->
-                <div>
+                <div class="lg:flex-1">
                     <div class="border-b-2 border-black border-dotted py-4">
-                        <h1>Select Your Seat </h1>
+                        <h1 class="font-bold text-xl">Select Your Seat </h1>
                     </div>
                     <div class="flex justify-between items-center border-b-2 border-black border-dotted py-4">
                         <div class="flex items-center gap-2">
@@ -231,13 +231,92 @@
                     </div>
                 </div>
                 <!-- right -->
-                <div>
-                    <div></div>
+                <div class="flex-1">
+                    <div>
+                        <h1 class="font-bold text-xl">Select Your Seat</h1>
+                    </div>
+                    <div class="p-4 space-y-5">
+                        <!-- heading -->
+                        <div class="flex items-center justify-between border-b-2 border-dotted border-black">
+                            <h1>Seat <span>0</span></h1>
+                            <h1>Class</h1>
+                            <h1>Price</h1>
+                        </div>
+                        <div class="border-b-2 border-black">
+                            <div class="flex items-center justify-between">
+                                <p>C2</p>
+                                <p>Economoy</p>
+                                <p>550</p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <p>C1</p>
+                                <p>Economoy</p>
+                                <p>550</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <p>Total Price</p>
+                            <p>BDT <span>1100</span></p>
+                        </div>
+                        <form action="">
+                            <input class="py-2 border-2 border-black rounded-lg px-2 w-[23rem]" type="text" name="" id="">
+                            <button class="bg-green-700 text-white px-3 py-3 rounded-lg" type="submit">Apply</button>
+                        </form>
+                        <div class="flex items-center justify-between">
+                            <p>Grand Total</p>
+                            <p>BDT <span>1100</span></p>
+                        </div>
+                    </div>                    
+                    <!-- form Section -->
+                    <form class="space-y-6" action="">
+                        <div>
+                            <label class="font-bold text-xl" for="">Passenger Name <sup>*</sup></label>
+                            <input class="w-full border-black border-2 rounded-lg py-3 placeholder-gray-500 px-2 mt-3" type="text" name="" id="" placeholder="Enter passenger name">
+                        </div>
+                        <div>
+                            <label class="font-bold text-xl" for="">Phone Number <sup>*</sup></label>
+                            <input class="w-full border-black border-2 rounded-lg py-3 placeholder-gray-500 px-2 mt-3" type="number" name="" id="" placeholder="Enter Phone number">
+                        </div>
+                        <div>
+                            <label class="font-bold text-xl" for="">Email ID</label>
+                            <input class="border-2 border-black w-full py-3 rounded-lg px-2 placeholder-gray-500 mt-3" type="email" name="" id="" placeholder="Enter Email Id">
+                        </div>
+                        <button class="bg-green-700 text-white px-3 py-2 rounded-lg w-full py-3" type="submit">Next</button>
+                        <div class="flex items-center justify-around">
+                            <p>Terms and Conditions</p>
+                            <p>Cancellation Policy</p>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="flex items-center justify-between p-10 bg-black text-white">
+        <nav class="flex flex-col">
+            <h6 class="footer-title">P-Ticket</h6> 
+            <a class="link link-hover text-sm">P-Ticket is a digital platform to make your <br> daily commuting better</a>
+        </nav> 
+        <nav class="flex flex-col">
+            <h6 class="footer-title">Download our app</h6> 
+            <a class="link link-hover flex gap-2">
+                <img src="./images/playstore.png" alt="">
+                <div>
+                    <p class="uppercase text-xs">Get it on</p>
+                    <h1 class="text-xl">Google Play</h1>
+                </div>
+            </a>
+        </nav>
+    </footer> 
+    <footer class="px-10 py-4 border-t bg-black text-base-content border-base-300 text-white flex items-center justify-between gap-11">
+        <aside class="items-center grid-flow-col">
+            <p>@all rights reserved, P-Ticket services limited-2024</p>
+        </aside> 
+        <div class="flex items-center justify-between gap-4">
+            <p>Terms & Conditions</p>
+            <p>Return & refund policy</p>
+            <p>Privacy policy</p>
+        </div>
+      </footer>
     <script src="main.js"></script>
 </body>
 </html>
