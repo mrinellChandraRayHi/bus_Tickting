@@ -16,3 +16,12 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
+.bg{
+    background-color: green;
+    color:#fff;
+}
+
+.bgd{
+    background-color: rgb(128, 175, 128);
+}
